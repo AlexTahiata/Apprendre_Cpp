@@ -4,8 +4,4 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
-
-DISTFILES += \
-    medailles.txt \
-    resultat.txt
+    references.cpp
