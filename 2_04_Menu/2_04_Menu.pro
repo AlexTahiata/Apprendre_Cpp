@@ -8,6 +8,7 @@ SOURCES += \
         menu.cpp
 
 HEADERS += \
+    exception.h \
     menu.h
 
 DISTFILES += \

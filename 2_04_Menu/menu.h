@@ -1,3 +1,11 @@
+/**
+  * @file       menu.h
+  * @brief      Définition de la classe Menu
+  * @version    1.1
+  * @author     alex TAHIATA
+  * @date       13 sept 2019
+  */
+
 #ifndef MENU_H
 #define MENU_H
 
@@ -17,7 +25,7 @@ public:
     menu(const string &_nom);
     ~menu();
     int Afficher();
-    void AttendreAppuiTouche();
+    static void AttendreAppuiTouche(); // déclarée statiquement, ce qui permet d'appeller la fonction même si la classe n'est pas instanciée
 };
 
 #endif // MENU_H
@@ -25,8 +33,8 @@ public:
 enum CHOIX_MENU
 {
     OPTION_1 = 1,
-    OPTION_2,
-    OPTION_3,
-    OPTION_4,
+    OPTION_2 = 2,
+    OPTION_3 = 3,
+    OPTION_4 = 4,
     QUITTER
 };

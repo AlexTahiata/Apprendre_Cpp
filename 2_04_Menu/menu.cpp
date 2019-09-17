@@ -5,9 +5,23 @@
 #include <iomanip>
 #include <algorithm>
 
+/**
+  * @file       menu.cpp
+  * @brief      Implémentation de la classe Menu
+  * @version    1.1
+  * @author     Alex TAHIATA
+  * @date       13 sept 2019
+  */
+
 using namespace std;
 
-
+/**
+ * @brief menu::menu
+ * @details Constructeur de la classe menu,
+ *      contient les items du menu
+ * @param _nom du fichier
+ * @param longueurMax d'une option
+ */
 menu::menu(const string &_nom):nom(_nom), longueurMax(0)
 {
     string nomDuFichier;
@@ -16,7 +30,7 @@ menu::menu(const string &_nom):nom(_nom), longueurMax(0)
 
     if(!leFichier .is_open())
     {
-        cerr << "Erreur lors de l'ouverture du fichier";
+        cerr << "Erreur d'ouverture du fichier : " << nom << endl;
         nbOptions=0;
     }else
     {
@@ -34,11 +48,22 @@ menu::menu(const string &_nom):nom(_nom), longueurMax(0)
     }
 }
 
+/**
+ * @brief menu::~menu
+ * @details Destructeur de la classe,
+ *      libère la mémoire du constructeur
+ */
 menu::~menu()
 {
     delete [] options ;
 }
 
+/**
+ * @brief menu::Afficher
+ * @details Fonction qui permet d'afficher le menu,
+ *      ainsi que d'éffectuer le choix du menu
+ * @return
+ */
 int menu::Afficher()
 {
     cout << "+" << setfill('-') << setw(6) << "+"  << setfill(' ') << setfill('-') << setw(11) << "+" << endl;
@@ -47,27 +72,33 @@ int menu::Afficher()
         cout << "|" << setw(5) << setfill(' ') << indice+1 << "| " << options[indice] << setfill(' ') << setw(2) << "|" << endl;
     }
     cout << "+" << setfill('-') << setw(6) << "+"  << setfill(' ') << setfill('-') << setw(11) << "+" << endl;
-
+    //
+    //
+    //
     int choix;
 
-    cout << "Entrer un nombre entre 1 et 5 : " ;
-    cin >> choix;
+    do{
+        cout << "Entrer un nombre entre 1 et 5 : " << endl;
+        cin >> choix;
+        /*if (choix != 0 || 1 || 2 || 3 || 4 || 5 ){
+            cout << '\n' << "Erreur" << '\n' << endl;
+        }*/
+    }while(choix > nbOptions);
 
-    if(!(cin>>choix))
-    {
-        cin.clear();
-        cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
-        choix = -1;
-    }
-
-    return 0;
+    return choix;
 }
 
+/**
+ * @brief menu::AttendreAppuiTouche
+ * @details Fonction qui attend que l'on appui sur la touche Entrée après avoir fait son choix,
+ *      le buffer d'entrée est vidé
+ */
 void menu::AttendreAppuiTouche()
 {
     string uneChaine;
     cout << endl << "appuyer sur la touche Entrée pour continuer...";
     getline(cin,uneChaine);
+    // Vidage du tampon d'entrée
     cin.ignore(std::numeric_limits<streamsize>::max(), '\n' );
     system("clear");
 }
