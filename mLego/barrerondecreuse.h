@@ -1,3 +1,8 @@
+/**
+  * @file       BarreRondeCreuse.h
+  * @brief      Définition de la classe BarreRondeCreuse
+  */
+
 #ifndef BARRERONDECREUSE_H
 #define BARRERONDECREUSE_H
 #include "barreronde.h"

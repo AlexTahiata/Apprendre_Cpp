@@ -1,3 +1,11 @@
+/**
+  * @file       Barre.h
+  * @brief      Définition de la classe Barre
+  * @version    1.1
+  * @author     Alex TAHIATA
+  * @date       20 septembre 2019
+  */
+
 #ifndef BARRE_H
 #define BARRE_H
 #include <string>

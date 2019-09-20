@@ -1,3 +1,8 @@
+/**
+  * @file       BarreRectangle.h
+  * @brief      Définition de la classe BarreRectangle
+  */
+
 #ifndef BARRERECTANGLE_H
 #define BARRERECTANGLE_H
 #include "barre.h"

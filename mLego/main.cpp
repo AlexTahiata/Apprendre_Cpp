@@ -1,3 +1,12 @@
+/**
+  * @file       Barre.h
+  * @brief      Implémentation du main
+  * @details    Permet d'appeller les fonctions des classes héritant de la classe Barre étant celle de base
+  * @version    1.1
+  * @author     Alex TAHIATA
+  * @date       20 septembre 2019
+  */
+
 #include <iostream>
 #include "barre.h"
 #include "barreronde.h"
@@ -10,6 +19,10 @@
 
 using namespace std;
 
+/**
+ * @brief main
+ * @return
+ */
 int main()
 {
     //AFFICHAGE DES CARACTERISTIQUES :

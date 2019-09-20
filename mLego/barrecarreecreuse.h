@@ -1,3 +1,8 @@
+/**
+  * @file       BarreCarreeCreuse.h
+  * @brief      Définition de la classe BarreCarreeCreuse
+  */
+
 #ifndef BARRECARREECREUSE_H
 #define BARRECARREECREUSE_H
 #include "barrecarree.h"

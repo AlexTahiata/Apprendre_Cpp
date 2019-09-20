@@ -1,3 +1,8 @@
+/**
+  * @file       BarreRonde.h
+  * @brief      Définition de la classe BarreRonde
+  */
+
 #ifndef BARRERONDE_H
 #define BARRERONDE_H
 #include "barre.h"
@@ -16,7 +21,6 @@ protected:
     int diametre;
     double pi;
     double section;
-    //double masse;
 };
 
 #endif // BARRERONDE_H
