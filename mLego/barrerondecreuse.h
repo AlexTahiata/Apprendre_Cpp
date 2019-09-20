@@ -12,6 +12,7 @@ public:
                      int _diametreInterieur);
     ~BarreRondeCreuse();
     double CalculSection();
+    double CalculerMasse();
 private:
     int diametreInterieur;
 };

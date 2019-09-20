@@ -6,6 +6,7 @@ CONFIG -= qt
 SOURCES += \
         barre.cpp \
         barrecarree.cpp \
+        barrecarreecreuse.cpp \
         barrerectangle.cpp \
         barreronde.cpp \
         barrerondecreuse.cpp \
@@ -14,6 +15,7 @@ SOURCES += \
 HEADERS += \
     barre.h \
     barrecarree.h \
+    barrecarreecreuse.h \
     barrerectangle.h \
     barreronde.h \
     barrerondecreuse.h

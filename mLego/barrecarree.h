@@ -8,11 +8,11 @@ class BarreCarree : public Barre
 {
 public:
     BarreCarree(string _reference, int _longueur, double _densite, string _nom,
-                int _carree);
+                int _longueurCarree);
     ~BarreCarree();
     double CalculSection();
     double CalculerMasse();
-private:
+protected:
     int longueurCarree;
     int section;
 };

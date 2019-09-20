@@ -14,6 +14,7 @@ BarreRonde::BarreRonde(string _reference, int _longueur, double _densite, string
 
     cout << "Le diamètre                         : " << diametre << "mm" << endl;
     cout << "Pi                                  : " << pi << endl;
+    cout << "\n";
 }
 
 BarreRonde::~BarreRonde()

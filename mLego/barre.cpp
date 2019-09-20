@@ -12,11 +12,11 @@ Barre::Barre(string _reference, int _longueur, double _densite, string _nom):
     cout << "Constructeur de la classe Barre" << endl;
     cout << "\n";
 
-    cout << "La référence est : " << reference << endl;
+    /*cout << "La référence est : " << reference << endl;
     cout << "La longueur est de : " << longueur << " m" << endl;
     cout << "La densité est de : " << densite << " g/cm3" << endl;
     cout << "Le nom du matériau est : " << nom << endl;
-    cout << "\n";
+    cout << "\n";*/
 }
 
 Barre::~Barre()
@@ -31,5 +31,6 @@ void Barre::AfficherCaracteristiques()
     cout << "La longueur : " << longueur << endl;
     cout << "La densité : " << densite << endl;
     cout << "Le nom : " << nom << endl;
+    cout << "\n";
 }
 

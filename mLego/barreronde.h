@@ -12,7 +12,7 @@ public:
     ~BarreRonde();
     double CalculSection();
     double CalculerMasse();
-private:
+protected:
     int diametre;
     double pi;
     double section;
