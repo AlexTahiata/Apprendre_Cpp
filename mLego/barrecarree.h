@@ -7,7 +7,7 @@ using namespace std;
 class BarreCarree : public Barre
 {
 public:
-    BarreCarree(string _reference, int _longueur, float _densite, string _nom,
+    BarreCarree(string _reference, int _longueur, double _densite, string _nom,
                 int _carree);
     ~BarreCarree();
     double CalculSection();

@@ -7,7 +7,7 @@ using namespace std;
 class BarreRonde : public Barre
 {
 public:
-    BarreRonde(string _reference, int _longueur, float _densite, string _nom,
+    BarreRonde(string _reference, int _longueur, double _densite, string _nom,
                int _diametre, double _pi);
     ~BarreRonde();
     double CalculSection();
@@ -16,7 +16,7 @@ private:
     int diametre;
     double pi;
     double section;
-    double masse;
+    //double masse;
 };
 
 #endif // BARRERONDE_H

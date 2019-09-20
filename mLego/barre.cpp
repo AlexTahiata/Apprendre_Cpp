@@ -3,13 +3,20 @@
 
 using namespace std;
 
-Barre::Barre(string _reference, int _longueur, float _densite, string _nom):
+Barre::Barre(string _reference, int _longueur, double _densite, string _nom):
     reference(_reference),
     longueur(_longueur),
     densite(_densite),
     nom(_nom)
 {
     cout << "Constructeur de la classe Barre" << endl;
+    cout << "\n";
+
+    cout << "La référence est : " << reference << endl;
+    cout << "La longueur est de : " << longueur << " m" << endl;
+    cout << "La densité est de : " << densite << " g/cm3" << endl;
+    cout << "Le nom du matériau est : " << nom << endl;
+    cout << "\n";
 }
 
 Barre::~Barre()

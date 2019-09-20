@@ -3,13 +3,14 @@
 
 using namespace std;
 
-BarreRectangle::BarreRectangle(string _reference, int _longueur, float _densite, string _nom,
+BarreRectangle::BarreRectangle(string _reference, int _longueur, double _densite, string _nom,
                                int _longueurCercle, int _largeurCercle):
     Barre(_reference, _longueur, _densite, _nom),
     longueurCercle(_longueurCercle),
     largeurCercle(_largeurCercle)
 {
     cout << "Constructeur de la classe BarreRectangle" << endl;
+    cout << "\n";
 
     cout << "Longueur du cercle : " << longueurCercle << " mm" <<endl;
     cout << "Largeur du cercle : " << largeurCercle << " mm" << endl;
@@ -17,10 +18,16 @@ BarreRectangle::BarreRectangle(string _reference, int _longueur, float _densite,
 
 BarreRectangle::~BarreRectangle()
 {
+    cout << "\n";
     cout << "Destructeur de la classe BarreRectangle" << endl;
 }
 
 double BarreRectangle::CalculSection()
 {
     return longueurCercle * largeurCercle;
+}
+
+double BarreRectangle::CalculerMasse()
+{
+    return (static_cast<double>(longueur)) * CalculSection() * densite;
 }

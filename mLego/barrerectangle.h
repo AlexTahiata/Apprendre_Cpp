@@ -7,7 +7,7 @@ using namespace std;
 class BarreRectangle : public Barre
 {
 public:
-    BarreRectangle(string _reference, int _longueur, float _densite, string _nom,
+    BarreRectangle(string _reference, int _longueur, double _densite, string _nom,
                    int _longueurCercle, int _largeurCercle);
     ~BarreRectangle();
     double CalculSection();

@@ -3,35 +3,33 @@
 
 using namespace std;
 
-BarreRonde::BarreRonde(string _reference, int _longueur, float _densite, string _nom,
+BarreRonde::BarreRonde(string _reference, int _longueur, double _densite, string _nom,
                        int _diametre, double _pi):
     Barre(_reference, _longueur, _densite, _nom),
     diametre(_diametre),
     pi(_pi)
 {
     cout << "Constructeur de la classe BarreRonde" << endl;
+    cout << "\n";
 
-    cout << "Le diamètre : " << diametre << "mm" << endl;
-    cout << "Pi :          " << pi << endl;
+    cout << "Le diamètre                         : " << diametre << "mm" << endl;
+    cout << "Pi                                  : " << pi << endl;
 }
 
 BarreRonde::~BarreRonde()
 {
+    cout << "\n";
     cout << "Destructeur de la classe BarreRonde" << endl;
 }
 
 double BarreRonde::CalculSection()
 {
-    section = pi * (diametre * diametre) / 4;
+    return pi * (diametre * diametre) / 4;
 
-    return section;
+    //return section;
 }
 
 double BarreRonde::CalculerMasse()
 {
-    masse = (<static_cast<double>(longueur)) * CalculSection() * densite;
-
-    masse = (<static_cast<double>(longueur)) * section * densite;
-
-    return masse;
+    return (static_cast<double>(longueur)) * CalculSection() * densite;
 }
