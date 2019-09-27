@@ -4,4 +4,14 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        codeur.cpp \
+        equilibreuse.cpp \
+        main.cpp \
+        microdacqlite.cpp \
+        moteur.cpp
+
+HEADERS += \
+    codeur.h \
+    equilibreuse.h \
+    microdacqlite.h \
+    moteur.h

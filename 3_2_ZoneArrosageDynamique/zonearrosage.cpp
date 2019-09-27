@@ -1,4 +1,5 @@
 #include "zonearrosage.h"
+#include "capteurhumidite.h"
 #include "iostream"
 
 using namespace std;
@@ -24,13 +25,19 @@ ZoneArrosage::ZoneArrosage(string _initialisation)
     leCapteurHumidite = new CapteurHumidite(parametres[4]);
 }
 
+
+void ZoneArrosage::Piloter()
+{
+    laVanne->Ouvrir();
+    if (leCapteurHumidite->MesurerHumiditeDuSol()> 100)
+    {
+        laVanne->Fermer();
+    }
+
+}
+
 ZoneArrosage::~ZoneArrosage()
 {
     cout << "Destructeur de la classe ZoneArrosage" << endl;
     delete laVanne; // libérer l'espace alloué lors de la création du pointeur laVanne
-}
-
-void ZoneArrosage::Piloter()
-{
-
 }

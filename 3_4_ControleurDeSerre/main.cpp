@@ -1,10 +1,9 @@
 #include <iostream>
-#include "equilibreuse.h"
 
 using namespace std;
 
 int main()
 {
-    Equilibreuse uneEquilibreuse;
+    cout << "Hello World!" << endl;
     return 0;
 }
