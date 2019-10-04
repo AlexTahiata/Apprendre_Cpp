@@ -14,10 +14,9 @@ using namespace std;
  *      pour finalement appeller la fonction AttendreAppuiTouche
  * @return
  */
-int main()
+/*int main()
 {
     int choix;
-    //try{}
     MenuPrincipal leMenuPrincipal("menuPrincipal.txt");
     MenuPrincipal leMenuCompteDepot("menuCompteDepot.txt");
     MenuPrincipal leMenuCompteEpargne("menuCompteEpargne.txt");
@@ -58,7 +57,6 @@ int main()
                     break;
                 }
             }while(choix != QUITTER_2);
-            //b = 1;
             break;
         case OPTION_2:
             cout << "Vous avez choisi le menu compte epargne" << endl;
@@ -96,4 +94,36 @@ int main()
     }while(choix != QUITTER);
 
     return 0;
+}*/
+
+int main() {
+
+    int choix;
+    MenuPrincipal leMenuPrincipal("menuPrincipal.txt");
+    MenuPrincipal leMenuCompteDepot("menuCompteDepot.txt");
+    MenuPrincipal leMenuCompteEpargne("menuCompteEpargne.txt");
+
+    Compte leCompte;
+
+    do
+    {
+        choix = leMenuPrincipal.Afficher();
+        switch (choix)
+        {
+        case OPTION_1:
+            cout << "Vous avez choisi le menu compte" << endl;
+            MenuPrincipal::AttendreAppuiTouche();
+            break;
+        case OPTION_2:
+            cout << "Vous avez choisi le menu compte epargne" << endl;
+            MenuPrincipal::AttendreAppuiTouche();
+            break;
+        }
+    }while(choix != QUITTER);
+
+    return 0;
 }
+
+/*void GestionCompteEpargne(CompteEpargne &c){
+
+}*/
