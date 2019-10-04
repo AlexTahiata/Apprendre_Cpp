@@ -2,6 +2,7 @@
 #define MOTEUR_H
 
 class MicroDacqLite;
+//OUi
 
 class Moteur
 {
