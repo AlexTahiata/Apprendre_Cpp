@@ -10,6 +10,7 @@ SOURCES += \
         barrerectangle.cpp \
         barreronde.cpp \
         barrerondecreuse.cpp \
+        catalogue.cpp \
         main.cpp
 
 HEADERS += \
@@ -18,4 +19,5 @@ HEADERS += \
     barrecarreecreuse.h \
     barrerectangle.h \
     barreronde.h \
-    barrerondecreuse.h
+    barrerondecreuse.h \
+    catalogue.h
