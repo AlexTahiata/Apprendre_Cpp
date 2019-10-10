@@ -1,5 +1,0 @@
-Consultation du solde
-Depot
-Retrait
-Quitter
-

@@ -11,7 +11,7 @@ private:
     double longueur;
     double angle;
 public:
-    Segment(const double _longueur, const double _angle);
+    Segment(int _numero, int _vitesse, const double _longueur, const double _angle);
     void Afficher(); // fonction virtuel par héritage par rapport à la fonction Afficher() de la classe Element
 };
 

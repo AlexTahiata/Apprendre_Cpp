@@ -1,3 +1,0 @@
-choix Menu compte
-choix Menu compte epargne
-Quitter .
