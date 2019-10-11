@@ -1,3 +1,11 @@
+/**
+  * @file       trajectoire.h
+  * @brief      Déclaration de la classe Trajectoire
+  * @version    1.1
+  * @author     Alex TAHIATA
+  * @date       11 oct 2019
+  */
+
 #ifndef TRAJECTOIRE_H
 #define TRAJECTOIRE_H
 #include <iostream>
@@ -14,7 +22,7 @@ private:
 public:
     Trajectoire(const int _nbEtapesMax);
     ~Trajectoire();
-    bool Ajouter(Element *pElement); // si bool Ajouter(const Element *_pElement); comme indiquer, alors gros bug
+    bool Ajouter(Element *pElement); // si bool Ajouter(const Element *_pElement); comme indiquer, alors bug
     void Afficher();
 };
 

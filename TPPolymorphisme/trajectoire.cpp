@@ -15,11 +15,10 @@ Trajectoire::~Trajectoire()
 bool Trajectoire::Ajouter(Element *pElement)
 {
     bool retour = true;
-    int numero = 0;
-    if (prochaineEtape < nbEtapesMax){
+    if (prochaineEtape < nbEtapesMax) {
         parcours[prochaineEtape++] = pElement;
-        numero += 1;
-        cout << "(" << numero << ")";
+        parcours[prochaineEtape-1]->setNumero(prochaineEtape);
+        //pElement->setNumero();
     } else {
         retour = false;
     }
@@ -30,8 +29,15 @@ void Trajectoire::Afficher()
 {
     cout << "Trajectoire : \n" << endl;
 
+    double longueurTotale = 0;
+
     for (int indice = 0; indice < nbEtapesMax; indice++)
     {
+        longueurTotale += parcours[indice]->ObtenirLongueur();
+        cout << "(" << parcours[indice]->getNumero() << ") " ;
         parcours[indice]->Afficher();
     }
+
+    cout << "Logueur totale: " << longueurTotale << endl;
+
 }

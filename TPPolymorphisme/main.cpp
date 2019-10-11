@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    Trajectoire laTrajectoire(0);
+    Trajectoire laTrajectoire(2);
 
     Segment leSegment(0, 3, 9, 0);
 
@@ -17,15 +17,17 @@ int main()
     Vecteur<int> v1(9,0);
     Vecteur<int> v2(12,4);
 
-    laTrajectoire.Afficher();
-
     laTrajectoire.Ajouter(&leSegment);
-    leSegment.Afficher();
     v1.Afficher();
 
     laTrajectoire.Ajouter(&leSegment2);
-    leSegment2.Afficher();
     v2.Afficher();
+
+    laTrajectoire.Afficher();
+
+
+
+
 
     return 0;
 }

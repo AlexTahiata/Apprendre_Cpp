@@ -1,3 +1,11 @@
+/**
+  * @file       vecteur.h
+  * @brief      Déclaration de la classe Vecteur
+  * @version    1.1
+  * @author     Alex TAHIATA
+  * @date       11 oct 2019
+  */
+
 #ifndef VECTEUR_H
 #define VECTEUR_H
 

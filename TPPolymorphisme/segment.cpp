@@ -14,3 +14,27 @@ void Segment::Afficher()
     cout << "    " << "A = " << angle;
     cout << "    " << "V = " << vitesse << endl;
 }
+
+double Segment::ObtenirLongueur()
+{
+    return longueur;
+
+    //cout << "\nLongueur totale du parcours = " << longueurTotale << endl;
+}
+
+void Segment::ObtenirDuree()
+{
+    /*int duree;
+    int vitesseTotale;
+    vitesseTotale = leSegment.vitesse + leSegment2.vitesse;
+    duree = (longueurTotale / vitesseTotale);
+
+    cout << "Durée totale du parcours = " << duree << endl;*/
+}
+
+void Segment::ObtenirVecteurArivee()
+{
+    //x = longueur * cos(angle);
+    //y = longueur * sin(angle);
+}
+

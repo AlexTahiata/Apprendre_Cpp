@@ -1,5 +1,12 @@
 #include "element.h"
 
+/**
+ * @brief element::element
+ * @details Constructeur de la classe Element,
+ *      fait hériter la classe Segment de ses attributs et fonctions
+ * @param _numero du segment
+ * @param _vitesse du vecteur
+ */
 Element::Element(int _numero, int _vitesse):
     numero(_numero),
     vitesse(_vitesse)
@@ -12,26 +19,29 @@ Element::~Element()
 
 }
 
-void Element::ObtenirLongueur()
+int Element::getNumero()
 {
-    /*int longueurTotale;
-    longueurTotale = leSegment.longueur + leSegment2.longueur;
-    cout << "\nLongueur totale du parcours = " << longueurTotale << endl;*/
+    return numero;
+}
+
+void Element::setNumero(int &value)
+{
+    numero = value;
+}
+
+double Element::ObtenirLongueur()
+{
+
 }
 
 void Element::ObtenirDuree()
 {
-    /*int duree;
-    int vitesseTotale;
-    vitesseTotale = leSegment.vitesse + leSegment2.vitesse;
-    duree = (longueurTotale / vitesseTotale);
-    cout << "Durée totale du parcours = " << duree << endl;*/
+
 }
 
 void Element::ObtenirVecteurArivee()
 {
-    /*x = longueur * cos(angle);
-    y = longueur * sin(angle);*/
+
 }
 
 void Element::Afficher()
